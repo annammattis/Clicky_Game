@@ -1,5 +1,5 @@
 import React from 'react';
-import paintings from "./cards.json";
+import pictures from "./cards.json";
 import './App.css';
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
@@ -15,28 +15,28 @@ function shuffle(array) {
 
 class App extends Component {
   state = {
-    paintings,
+    pictures,
     score: 0,
     topScore: 0,
     showAlert: 0,
     showSuccess: 0,
-    clickedpaintings: []
+    clickedpictures: []
   };
 
   clickedImage = id => {
     // assign the state of the empty array to a let to be updated
-    let clickedpaintings = this.state.clickedpaintings;
+    let clickedpictures = this.state.clickedpictures;
     let score = this.state.score;
     let topScore = this.state.topScore;
     this.setState({
       showAlert: 0
     });
 
-    // if the clicked image has an id of the indexed paintings
-    if (clickedpaintings.indexOf(id) === -1) {
+    // if the clicked image has an id of the indexed pictures
+    if (clickedpictures.indexOf(id) === -1) {
       // push that id into that id into the array to be stored
-      clickedpaintings.push(id);
-      console.log(clickedpaintings);
+      clickedpictures.push(id);
+      console.log(clickedpictures);
       // run the score function
       this.handleIncrement();
       // run the reshuffle function after each click
@@ -46,13 +46,13 @@ class App extends Component {
       this.setState({
         showSuccess: 1,
         score: 0,
-        clickedpaintings: []
+        clickedpictures: []
       });
     } else {
        // alert player loss
       this.setState({
         score: 0,
-        clickedpaintings: []
+        clickedpictures: []
       });
       console.log("duplicate");
       this.setState({
@@ -75,7 +75,7 @@ class App extends Component {
 
   // shuffle up images
   makeShuffle = () => {
-    this.setState({ paintings: shuffle(paintings) });
+    this.setState({ pictures: shuffle(pictures) });
   };
 
   render() {
@@ -99,14 +99,14 @@ class App extends Component {
           topScore={this.state.topScore}
         />
         <div className="row">
-          {this.state.paintings.map(painting => (
+          {this.state.pictures.map(picture => (
             <Card
-              key={painting.id}
-              id={painting.id}
-              artist={painting.artist}
-              title={painting.title}
-              year={painting.year}
-              image={painting.image}
+              key={picture.id}
+              id={picture.id}
+              artist={picture.artist}
+              title={picture.title}
+              year={picture.year}
+              image={picture.image}
               clickedImage={this.clickedImage}
             />
           ))}
