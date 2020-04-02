@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import paintings from "./cards.json";
 import './App.css';
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
