@@ -94,7 +94,7 @@ class App extends Component {
           Brilliant, you haven't clicked on duplicates!
           </div>
         <Scoreboard
-          title="MoMA clicky Game"
+          title="Wonders of the World clicky Game"
           score={this.state.score}
           topScore={this.state.topScore}
         />
@@ -103,9 +103,8 @@ class App extends Component {
             <Card
               key={picture.id}
               id={picture.id}
-              artist={picture.artist}
               title={picture.title}
-              year={picture.year}
+              origin={picture.origin}
               image={picture.image}
               clickedImage={this.clickedImage}
             />
