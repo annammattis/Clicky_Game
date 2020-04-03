@@ -1,17 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import pictures from "./cards.json";
 import './App.css';
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
 
-// shuffle upon each click
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
 
 class App extends Component {
   state = {
@@ -72,6 +64,15 @@ class App extends Component {
     // setState updates a components states
     this.setState({ score: this.state.score + 1 });
   };
+
+  // shuffle upon each click
+  shuffle = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
 
   // shuffle up images
   makeShuffle = () => {
