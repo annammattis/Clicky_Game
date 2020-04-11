@@ -3,72 +3,84 @@
       "id": 1,
       "image": "/assests/images/6190.jpg",
       "title": "Great Pyramids of Giza",
-      "origin": "Egypt"
+      "origin": "Egypt",
+      "clicked": false
     },
     {
       "id": 2,
       "image": "/assests/images/alessandro-porpiglia-tyvE-a8DPvw-unsplash.jpg",
       "title": "Trevi Fountain",
-      "origin": "Rome, ITL"
+      "origin": "Rome, ITL",
+      "clicked": false
     },
     {
       "id": 3,
       "image": "/assests/images/andrea-leopardi-k8-5bWDAklo-unsplash.jpg",
       "title": "The Treasury of Petra",
-      "origin": "Jordan"
+      "origin": "Jordan",
+      "clicked": false
     },
     {
       "id": 4,
       "image": "/assests/images/babak-fakhamzadeh-PO7CGnoDFUI-unsplash.jpg",
       "title": "Machu Picchu",
-      "origin": "Peru"
+      "origin": "Peru",
+      "clicked": false
     },
     {
       "id": 5,
       "image": "/assests/images/david-lusvardi-SVMHNQUtatY-unsplash.jpg",
       "title": "Grand Canyon",
-      "origin": "Arizona, US"
+      "origin": "Arizona, US",
+      "clicked": false
     },
     {
       "id": 6,
       "image": "/assests/images/janko-ferlic-hjkQbtGHdDY-unsplash.jpg",
       "title": "Eiffel Tower",
-      "origin": "Paris, FR"
+      "origin": "Paris, FR",
+      "clicked": false
     },
     {
       "id": 7,
       "image": "/assests/images/paul-g-9tuK3MbqGUI-unsplash.jpg",
       "title": "St. Basil's Cathedral",
-      "origin": "Moscow, USSR"
+      "origin": "Moscow, USSR",
+      "clicked": false
     },
     {
       "id": 8,
       "image": "/assests/images/robert-nyman-3wwiqmOm3gQ-unsplash.jpg",
       "title": "Great Wall of China",
-      "origin": "Huairou District, CN"
+      "origin": "Huairou District, CN",
+      "clicked": false
     },
     {
       "id": 9,
       "image": "/assests/images/stella-dessou-mb_Dj6_fmro-unsplash.jpg",
       "title": "Athenian Acropolis",
-      "origin": "Athens, GR"
+      "origin": "Athens, GR",
+      "clicked": false
     },
     {
       "id": 10,
       "image": "/assests/images/thomas-besseling-aDvuMaOMHrQ-unsplash.jpg",
       "title": "Sagrada Familia",
-      "origin": "Barcelona, SP"
+      "origin": "Barcelona, SP",
+      "clicked": false
     },
     {
       "id": 11,
       "image": "/assests/images/christ-the-redemeer-guide++rio-de-janeiro.jpg",
       "title": "Christ the Redemeer",
-      "origin": "Rio De Janeiro, BR"
+      "origin": "Rio De Janeiro, BR",
+      "clicked": false
     },
     {
       "id": 12,
       "image": "assests/images/5148522141_61fc7803d4_o.jpg",
       "title": "Angkor Wat",
-      "origin": "Cambodia"
+      "origin": "Cambodia",
+      "clicked": false
     }
   ]
