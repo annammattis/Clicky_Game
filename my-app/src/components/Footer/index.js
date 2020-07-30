@@ -7,6 +7,12 @@ function Footer() {
       <div className="bottom">
         Wonders of the World Clicky Game! <img alt="react" src="assets/images/react.svg" />
       </div>
+      <div class="container">
+        <a href="https://github.com/annammattis" target="_blank"
+          >https://github.com/annammattis</a
+        >
+      </div>
+
     </footer>
   );
 }
